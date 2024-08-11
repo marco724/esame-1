@@ -1,0 +1,89 @@
+/* presentazione */
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+/* descrizione */
+
+.conteiner-about {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title-about {
+    margin: 150px auto auto 50px;
+    text-align: center;
+}
+
+.myfoto {
+    width: 300px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border: black solid 10px;
+    margin: 20px;
+}
+
+.myfoto:hover {
+    border: #F28705 solid 10px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+
+.MyDescription {
+    max-width: 600px;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 500;
+}
+
+/* media */
+
+@media all and (max-width: 800px) {
+
+    .subtitle-banner {
+        font-size: 3rem;
+    }
+
+    .title-banner,
+    .title-port,
+    .title-about,
+    .title-contact {
+        font-size: 4rem;
+    }
+
+    #myfoto {
+        width: 150px;
+        border: #F28705 solid 5px;
+    }
+
+    #mydesk {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 600px){
+
+    section #portfolio{
+        margin: 0;
+    }
+
+    div .conteiner-botton{
+        margin: 10px 0 0 0;
+    }
+
+    .top{
+        margin:50px 0;
+    }
+}
+
